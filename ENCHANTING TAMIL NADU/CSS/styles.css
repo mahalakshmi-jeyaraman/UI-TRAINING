@@ -1,0 +1,247 @@
+/* UNIVERSAL SELECTOR STARTS HERE */
+*{
+    margin: 0%;
+}
+/* UNIVERSAL SELECTOR ENDS HERE */
+
+/* HEADER SECTION STARTS HERE */
+.header{
+    background-color: #43133e;
+    height: 40px;
+}
+h3{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+/* HEADER SECTION ENDS HERE */
+
+
+.content{
+    padding: 80px;
+}
+.top-article{
+    display: inline-flex;
+}
+.bottom-article{
+    display: inline-flex;
+}
+
+/* ARTICLE 1 STARTS HERE */
+.article1{
+    width: 33%;
+    margin-right: 20px;
+}
+.img1{
+    margin-bottom: 20px;
+}
+.title1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+    margin-bottom: 15px;
+}
+.place1{
+    padding-right: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 25px;
+}
+.content1{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    margin-bottom: 20px;
+}
+.button1{
+    margin-bottom: 80px;
+}
+.btn1{
+    padding: 15px 60px;
+    background-color: #7a1655;
+    color: white;
+}
+/* ARTICLE 1 ENDS HERE */
+
+/* ARTICLE 2 STARTS HERE*/
+.article2{
+    width: 33%;
+    margin-right: 20px;
+}
+.img2{
+    margin-bottom: 20px;
+}
+.title2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+    margin-bottom: 15px;
+}
+.place2{
+    padding-right: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 25px;
+}
+.content2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    margin-bottom: 20px;
+}
+.btn2{
+    padding: 15px 60px;
+    background-color: #7a1655;
+    color: white;
+}
+/* ARTICLE 2 ENDS HERE */
+
+/* ARTICLE 3 STARTS HERE */
+.article3{
+    width: 33%;
+    margin-right: 20px;
+}
+.img3{
+    margin-bottom: 20px;
+}
+.title3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+    margin-bottom: 15px;
+}
+.place3{
+    padding-right: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 25px;
+}
+.content3{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    margin-bottom: 20px;
+}
+.button3{
+    margin-bottom: 80px;
+}
+.btn3{
+    padding: 15px 60px;
+    background-color: #7a1655;
+    color: white;
+}
+/* ARTICLE 3 ENDS HERE*/
+
+/* ARTICLE 4 STARTS HERE*/
+.article4{
+    width: 33%;
+    margin-right: 20px;
+}
+.img4{
+    margin-bottom: 20px;
+}
+.title4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+    margin-bottom: 15px;
+}
+.place4{
+    padding-right: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 25px;
+}
+.content4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    margin-bottom: 20px;
+}
+.btn4{
+    padding: 15px 60px;
+    background-color: #7a1655;
+    color: white;
+}
+/* ARTICLE 4 ENDS HERE */
+
+/* ARTICLE 5 STARTS HERE */
+.article5{
+    width: 33%;
+}
+.img5{
+    margin-bottom: 20px;
+}
+.title5{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+    margin-bottom: 15px;
+}
+.place5{
+    padding-right: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 25px;
+}
+.content5{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    margin-bottom: 20px;
+}
+.button5{
+    margin-bottom: 80px;
+}
+.btn5{
+    padding: 15px 60px;
+    background-color: #7a1655;
+    color: white;
+}
+/* ARTICLE 5 ENDS HERE */
+
+/* ARTICLE 6 STARTS HERE*/
+.article6{
+    width: 33%;
+}
+.img6{
+    margin-bottom: 20px;
+}
+.title6{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+    margin-bottom: 15px;
+}
+.place6{
+    padding-right: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 25px;
+}
+.content6{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    margin-bottom: 20px;
+}
+.btn6{
+    padding: 15px 60px;
+    background-color: #7a1655;
+    color: white;
+}
+/* ARTICLE 6 ENDS HERE */
+
+.content-a p{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #972c6e;
+}
+.content-b p{
+    margin-left: 160px;
+    margin-right: 160px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: x-large;
+    text-align: justify;
+    margin-bottom: 80px;
+}
+/* FOOTER SECTION STARTS HERE*/
+.footer{
+    background-color: #7a1655;
+    height: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 80px;
+}
+.footer h4{
+    color: white;
+}
+.footer h6{
+    color: rgba(245, 245, 245, 0.806);
+}
+/* FOOTER SECTION ENDS HERE */
