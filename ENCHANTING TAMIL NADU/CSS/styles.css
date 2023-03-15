@@ -1,0 +1,80 @@
+*{
+    margin: 0%;
+}
+.header{
+    background-color: #43133e;
+    height: 40px;
+}
+h3{
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    padding-top: 10px 0px 10px 0px;
+}
+.cover img{
+    width: 100%;
+}
+.content{
+    padding: 80px;
+}
+.top-article{
+    display: inline-flex;
+}
+.bottom-article{
+    display: inline-flex;
+}
+.article-pollachi, .article-thanjavur, .article-masangudi, .article-kumbakkonam{
+    width: 33%;
+    margin-right: 20px;
+}
+.article-tirunelveli, .article-chidambaram{
+    width: 33%;
+}
+.content img{
+    margin-bottom: 20px;
+}
+.title-place{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+    margin-bottom: 15px;
+}
+.place{
+    padding-right: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-bottom: 25px;
+}
+.content-place{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+    margin-bottom: 20px;
+}
+.button{
+    margin-bottom: 80px;
+}
+.btn{
+    padding: 15px 60px;
+    background-color: #7a1655;
+    color: white;
+}
+.content-a p{
+    text-align: center;
+    margin-bottom: 40px;
+    color: #972c6e;
+    font: xx-large Verdana, Geneva, Tahoma, sans-serif;
+}
+.content-b p{
+    margin: 0px 160px;
+    text-align: justify;
+    margin-bottom: 80px;
+    font: x-large Verdana, Geneva, Tahoma, sans-serif;
+}
+.footer{
+    background-color: #7a1655;
+    height: 40px;
+    padding: 20px 0px 20px 80px;
+}
+.footer h4{
+    color: white;
+}
+.footer h6{
+    color: rgba(245, 245, 245, 0.806);
+}
