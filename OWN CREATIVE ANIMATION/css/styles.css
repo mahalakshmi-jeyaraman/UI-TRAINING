@@ -1,0 +1,83 @@
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.spinner{
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    border-radius:50% ;
+    border-right : 6px solid pink;
+    -webkit-animation: load 2s linear infinite;
+    animation: load 2s linear infinite;
+}
+@-webkit-keyframes load{
+    0%{
+        -webkit-transform : rotate(0deg);
+    }
+    25%{
+        -webkit-transform : rotate(90deg);
+    }
+    50%{
+        -webkit-transform : rotate(180deg);
+    }
+    75%{
+        -webkit-transform : rotate(270deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+    }
+}
+@keyframes load {
+    0%{
+        transform : rotate(0deg);
+    }
+    25%{
+        transform : rotate(90deg);
+    }
+    50%{
+        transform : rotate(180deg);
+    }
+    75%{
+        transform : rotate(270deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.spinner-type-dot{
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    top: 50%; 
+    left: 45%;
+    display: flex;
+    align-items: center;
+    align-content: center; 
+    justify-content: center;  
+    z-index: 1;
+}
+.spinner-element{
+    border-radius: 100%;
+    border: 5px solid palevioletred;
+    margin: 10px;
+}
+.spinner-element:nth-child(1) {
+    animation: preloader .6s ease-in-out alternate infinite;
+}
+.spinner-element:nth-child(2) {
+    animation: preloader .6s ease-in-out alternate .2s infinite;
+}
+  
+.spinner-element:nth-child(3) {
+    animation: preloader .6s ease-in-out alternate .4s infinite;
+}
+@keyframes preloader {
+    100% { transform: scale(2); }
+}
