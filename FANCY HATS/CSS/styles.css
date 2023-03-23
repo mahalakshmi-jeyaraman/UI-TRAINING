@@ -32,11 +32,15 @@ img{
     width: 35px;
     height: 3px;
     background-color: white;
-    margin-bottom: 5px ;
-    margin-top: 5px;
+    margin: 5px 0px;
+    /* margin-bottom: 5px ;
+    margin-top: 5px; */
     border-radius: 5px;
 }
 .dropdown-content{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 18px;
     background-color: black;
     display: none;
     position: absolute;
@@ -52,15 +56,16 @@ img{
 .dropdown-content svg{
     padding : 10px;
     display: block;
-    margin-left: 75px;
-    margin-top: 15px;
+    margin: 20px 40px 0px 75px;
+    /* margin-left: 75px;
+    margin-top: 40px; */
 }
 .dropdown-content a{
     color: white;
     padding: 15px 70px 15px 70px;
     text-decoration: none;
     display: block;
-    font-family: 'Roboto', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
     font-weight: 300;
     text-align: center;
 }
