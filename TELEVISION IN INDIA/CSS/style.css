@@ -2,43 +2,49 @@
     margin: 0%;
     box-sizing: border-box;
 }
+body{
+    font-family: 'Roboto', sans-serif;
+}
 .header{
     background-color: #145f94;
     color: white;
-    padding-top: 36px;
-    padding-bottom: 36px;
+    padding: 33px 0px;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 21px;
+    margin-bottom: 37px;
 }
-.doordharsan, .sonynetwork{
-    margin: 37px 0px 0px 145px;
-    float: left;
-    width: 51%;
+.main-content{
+    width : 100%;
+    padding: 0 135px;
 }
-.sunnetwork, .starnetwork{
-    margin: 37px 145px 0px 0px;
-    float: right;
-    width: 30%;
+.left-container{
+    width: 61%;
+    float:left;
 }
-.zeenetwork{
-    margin: 37px 0px 100px 145px;
-    float: left;
-    width: 51%;
+.right-container{
+   width: 37.5%;
+   float: right;
+}
+.networks{
+    margin-bottom: 20px;
+    width: 100%;
 }
 .heading{
     background-color: #145f94;
     color: white;
-    padding : 20px 0px 20px 28px;
-    font-family: 'Roboto', sans-serif;
+    padding : 16px 0px 16px 28px;
     font-size: 20px;
     font-weight: 500;
 }
 .content{
-    padding : 28px 28px 28px 28px;
+    padding : 23px 23px 23px 23px;
     border: 1px solid #145f94;
-    font-family: 'Roboto', sans-serif;
+    text-align: justify;
     font-size: 18px;
-    font-weight: 500;
+    line-height: 25px;
+    background-color:#f6f6f6;
+}
+.clearfix{
+    clear: both;
 }
