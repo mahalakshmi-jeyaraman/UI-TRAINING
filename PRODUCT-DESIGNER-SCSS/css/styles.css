@@ -1,0 +1,237 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: black;
+}
+
+img {
+  max-width: 100%;
+}
+
+header {
+  width: 100%;
+  height: 100px;
+  color: white;
+  text-align: right;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 27px;
+  font-weight: 400;
+  padding-top: 70px;
+  padding-right: 180px;
+  margin-bottom: 120px;
+}
+
+.brand-title {
+  height: 140px;
+  font-family: "Oswald", sans-serif;
+  font-weight: 200;
+  color: white;
+  text-align: center;
+  font-size: 140px;
+  letter-spacing: 0.03em;
+}
+.brand-title span {
+  color: #ffffff;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 140px;
+  font-weight: 400;
+}
+
+.brand-sub-title {
+  height: 70px;
+  margin-top: 65px;
+  color: #cecece;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 300;
+  font-size: 45px;
+  text-align: center;
+}
+.brand-sub-title span {
+  color: #4b90e2;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
+  margin-top: 160px;
+  margin-bottom: 160px;
+  padding-left: 150px;
+  padding-right: 150px;
+}
+.flex-container > div {
+  width: 30%;
+}
+
+.big-names {
+  height: 70px;
+  margin-top: 160px;
+  margin-bottom: 100px;
+  color: #cecece;
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 55px;
+  text-align: center;
+}
+.big-names span {
+  color: #b8e986;
+}
+
+.flex-container-logos {
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+  margin-bottom: 160px;
+  padding-left: 150px;
+  padding-right: 100px;
+  margin-bottom: 275px;
+}
+.flex-container-logos img {
+  max-width: 85%;
+}
+.flex-container-logos > div {
+  width: 10%;
+}
+
+#spotify {
+  padding-top: 50px;
+}
+
+#benz {
+  padding-top: 50px;
+}
+
+#lufthansa {
+  padding-top: 50px;
+}
+
+#ikea {
+  padding-top: 40px;
+}
+
+#mont {
+  padding-top: 30px;
+}
+
+.line {
+  display: flex;
+  justify-content: center;
+}
+
+.small-line {
+  width: 40px;
+  height: 1px;
+  background-color: white;
+  margin-right: 35px;
+}
+
+.long-line {
+  width: 225px;
+  height: 1px;
+  background-color: white;
+}
+
+.footer-content {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: 700;
+  font-size: 21px;
+  text-align: center;
+  color: white;
+  height: 22px;
+  margin-bottom: 165px;
+  margin-top: 75px;
+}
+
+.social-media-icons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  color: white;
+  font-size: 32px;
+  width: 336px;
+  margin: auto;
+  padding: 112px 0 72px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1.5px solid white;
+  height: 51.2px;
+  width: 51.2px;
+  border-radius: 50%;
+  font-size: 28px;
+}
+.icon:nth-child(3) {
+  font-size: 32px;
+}
+.icon:last-child {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: bold;
+  font-size: 32px;
+}
+
+@media screen and (max-width: 576px) {
+  .flex-container {
+    flex-direction: column;
+    margin: 160px 20px 160px 20px;
+    padding: 0;
+  }
+  .flex-container > div {
+    width: 100%;
+  }
+  .flex-container-logos {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+  .flex-container-logos > div {
+    width: 25%;
+  }
+  #spotify {
+    padding-top: 50px;
+  }
+  #benz {
+    padding-top: 50px;
+  }
+  #lufthansa {
+    padding-top: 50px;
+  }
+  #ikea {
+    padding-top: 40px;
+  }
+  #mont {
+    padding-top: 30px;
+  }
+  .small-line {
+    width: 16px;
+    margin-right: 15px;
+  }
+  .long-line {
+    width: 125px;
+  }
+  .social-media-icons {
+    width: 400px;
+  }
+  .brand-title {
+    font-size: 60px;
+    height: 100px;
+    margin-top: 15%;
+  }
+  .brand-title span {
+    font-size: 60px;
+  }
+  .brand-sub-title {
+    margin-top: 20px;
+    font-size: 30px;
+  }
+  header {
+    position: absolute;
+    top: 30%;
+    padding: 0;
+    text-align: center;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
