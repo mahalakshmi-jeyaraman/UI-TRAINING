@@ -1,11 +1,11 @@
 const form = document.getElementById('form');
-const firstname = document.getElementById('firstname');
-const lastname = document.getElementById('lastname');
+const firstname = document.getElementById('first-name');
+const lastname = document.getElementById('last-name');
 const email = document.getElementById('email');
-const contactnumber = document.getElementById('contactnumber');
+const contactnumber = document.getElementById('contact-number');
 const pincode = document.getElementById('pincode');
-const carnumber = document.getElementById('cardnumber');
-const cardexpiry = document.getElementById('cardexpiry');
+const cardnumber = document.getElementById('card-number');
+const cardexpiry = document.getElementById('card-expiry');
 const cvv = document.getElementById('cvv');
 
 
