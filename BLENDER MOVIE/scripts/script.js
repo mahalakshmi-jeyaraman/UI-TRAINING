@@ -1,11 +1,15 @@
-import blenderVideo from "../json/video.json" assert{type:'json'};
-import posterThumbnail from "../json/posters.json" assert{type:'json'};
+import blenderVideo from "../json/video.json" assert {
+    type: 'json'
+};
+import posterThumbnail from "../json/posters.json" assert {
+    type: 'json'
+};
 
 const comments = blenderVideo['comments'];
-const fragments = new DocumentFragment();
+const fragment = new DocumentFragment();
 
 const blenderMovies = document.createElement('div');
-blenderMovies.className ='blender-movies';
+blenderMovies.className = 'blender-movies';
 
 const videoClip = document.createElement('video');
 videoClip.src = blenderVideo.videoUrl;
@@ -19,7 +23,7 @@ videoTitle.textContent = 'Sintel';
 blenderMovies.appendChild(videoTitle);
 
 const videoDescription = document.createElement('p');
-videoDescription.className ='video-description';
+videoDescription.className = 'video-description';
 videoDescription.textContent = blenderVideo.description;
 blenderMovies.appendChild(videoDescription);
 
@@ -30,9 +34,10 @@ const heading4Element = document.createElement('h4');
 heading4Element.textContent = 'Comments';
 blenderMovies.appendChild(heading4Element);
 
-for( const details of blenderVideo.comments){
+for (const details of comments) {
     const commentsSection = document.createElement('div');
     commentsSection.className = 'comments-section';
+
     const reviewers = document.createElement('div');
     reviewers.className = 'reviewers';
     commentsSection.appendChild(reviewers);
@@ -59,8 +64,7 @@ for( const details of blenderVideo.comments){
 
     blenderMovies.appendChild(commentsSection);
 }
-
-fragments.appendChild(blenderMovies);
+fragment.appendChild(blenderMovies);
 
 const upcomingProjects = document.createElement('div');
 upcomingProjects.className = 'upcoming-projects';
@@ -69,11 +73,11 @@ const heading3Element = document.createElement('h3');
 heading3Element.textContent = 'Upcoming Projects';
 upcomingProjects.appendChild(heading3Element);
 
-const  movieThumbnails = document.createElement('div');
+const movieThumbnails = document.createElement('div');
 movieThumbnails.className = 'movie-thumbnails';
 
-for(const details of posterThumbnail){
-    const  thumbnail = document.createElement('img');
+for (const details of posterThumbnail) {
+    const thumbnail = document.createElement('img');
     thumbnail.src = details.imageUrl;
     thumbnail.alt = 'thumbnail';
     thumbnail.className = 'thumbnail';
@@ -81,11 +85,9 @@ for(const details of posterThumbnail){
 }
 
 upcomingProjects.appendChild(movieThumbnails);
-fragments.appendChild(upcomingProjects);
 
-const mainSection = document.getElementsByClassName('main-section');
-mainSection.appendChild(fragments);
+fragment.appendChild(upcomingProjects);
+
+const mainSection = document.getElementById('main-section');
+mainSection.appendChild(fragment);
 document.querySelector(".row-container").innerHTML = output;
-
-
-

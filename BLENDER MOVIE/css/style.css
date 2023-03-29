@@ -49,7 +49,7 @@ header .profile-img{
 .flex .align-items-center .justify-content{
     padding-top: 30px;
 }
-.main-section{
+#main-section{
     display: flex;
     flex-wrap:wrap;
     gap:30px;
@@ -114,7 +114,7 @@ h4{
 }
 .chat-box{
     display: flex;
-    position: fixed;
+    position: absolute;
     width: 57px;
     height: 57px;
     border-radius: 50%;
@@ -127,9 +127,13 @@ footer{
     background-color: black;
     padding: 19px;
 }
-.faMessage{
-    color: white;
+#faMessage{
+    color:white;
     font-size: 28px;
+    z-index: 10;
+    position: absolute;
+    top: 30%;
+    right: 25%;
 }
 .footer-container{
     padding-left: 15%;
