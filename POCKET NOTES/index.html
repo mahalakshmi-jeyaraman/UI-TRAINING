@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>POCKET NOTES</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- <section class="home-page">
+       HEADER -->
+    <!-- <header>
+        <div class="title">Pocket Notes</div>
+        <nav>
+          <button id="new-btn">NEW</button>
+        </nav>
+      </header>
+       CONTENT -->
+    <!-- <article id="notes-container">
+         <img src="./images/cube_image.png" alt="cube">
+        <img src="./images/cube.png" alt="cube" />
+        <p>Notes you add appear here</p>
+      </article>
+    </section> -->
+    <!-- style="display: none;" -->
+    <!-- LANDING PAGE -->
+    <section class="landing-page">
+      <!-- HEADER -->
+      <header>
+        <div class="title">Pocket Notes</div>
+        <nav>
+          <button id="delete-all-btn">DELETE ALL</button>
+          <button id="new-btn">NEW</button>
+        </nav>
+      </header>
+      <!-- CONTENT -->
+      <article id="notes-container">
+        <div id="app"></div>
+        <div id="load-more" style="display: none">
+          <button id="load-more-btn">LOAD MORE</button>
+        </div>
+      </article>
+    </section>
+
+
+    <!-- DELETE ALL PAGE & HOME PAGE -->
+
+
+    <!-- ADD NOTE -->
+    <section id="add-note-page" class="modal">
+      <!-- HEADER -->
+
+
+      <!-- FORM -->
+      <form action="" id="add-note-form">
+        <div class="header">
+          <p>NEW NOTE <span class="close">&times;</span></p>
+        </div>
+        <textarea
+          id="add-notes-title"
+          name="add-notes-title"
+          required
+          placeholder="Notes Title"
+        ></textarea>
+        <input
+          type="text"
+          id="add-image-url"
+          name="add-image-url"
+          placeholder="Add Image URL"
+        />
+        <textarea
+          id="add-content-here"
+          name="add-content-here"
+          required
+          placeholder="Add Content Here"
+        ></textarea>
+        <!-- COLOR PALLETE -->
+        <div class="colors-container">
+          <buttons class="color-button color1"></buttons>
+          <buttons class="color-button color2"></buttons>
+          <buttons class="color-button color3"></buttons>
+          <buttons class="color-button color4"></buttons>
+          <buttons class="color-button color5"></buttons>
+          <button id="add-btn">ADD</button>
+        </div>
+      </form>
+    </section>
+
+
+    <!-- EDIT NOTE -->
+    <section id="edit-note-page" class="modal" style="display: none">
+      <!-- HEADER -->
+
+
+      <!-- FORM -->
+      <form action="" id="edit-note-form">
+        <div class="header">
+          <p>EDIT NOTE <span class="close">&times;</span></p>
+        </div>
+        <textarea
+          id="edit-notes-title"
+          name="edit-notes-title"
+          required
+          placeholder="Notes Title"
+        ></textarea>
+        <input
+          type="text"
+          id="edit-image-url"
+          name="edit-image-url"
+          placeholder="Add Image URL"
+        />
+        <textarea
+          id="edit-content-here"
+          name="edit-content-here"
+          required
+          placeholder="Add Content Here"
+        ></textarea>
+        <!-- COLOR PALLETE -->
+        <div class="colors-container">
+          <buttons class="color-button color1"></buttons>
+          <buttons class="color-button color2"></buttons>
+          <buttons class="color-button color3"></buttons>
+          <buttons class="color-button color4"></buttons>
+          <buttons class="color-button color5"></buttons>
+          <button id="save-btn">SAVE</button>
+        </div>
+      </form>
+    </section>
+
+
+    <!-- DELETE ALL NOTES POPUP -->
+    <section
+      id="delete-all-notes-popup-page"
+      class="modal"
+      style="display: none"
+    >
+      <div class="delete-all-notes-popup">
+        <!-- HEADER -->
+        <div class="header">
+          <p>DELETE ALL NOTES</p>
+          <span class="close">&times;</span>
+        </div>
+        <!-- FORM -->
+        <div class="confirm-delete">
+          <p>Are you sure you want to delete all notes?</p>
+          <button id="confirm-all-delete-btn">YES,DELETE</button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- DELETE NOTE POPUP -->
+    <section id="delete-note-popup-page" class="modal" style="display: none">
+      <div class="delete-note-popup">
+        <!-- HEADER -->
+        <div class="header">
+          <p>DELETE NOTE</p>
+          <span class="close">&times;</span>
+        </div>
+        <!-- FORM -->
+        <div class="confirm-delete">
+          <p>Are you sure you want to delete this note?</p>
+          <button id="confirm-delete-btn">YES,DELETE</button>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- CONFIRM LEAVE POPUP -->
+    <section class="confirm-leave-page" style="display: none">
+      <div class="confirm-leave-popup">
+        <!-- HEADER -->
+        <div class="header">
+          <p>CONFIRM</p>
+          <span class="close">&times;</span>
+        </div>
+        <!-- FORM -->
+        <div class="confirm-leave">
+          <p>
+            Seems like you are in the middle of adding/editing content. Do you
+            want to leave?
+          </p>
+          <button id="confirm-leave-btn">YES,CLOSE</button>
+        </div>
+      </div>
+    </section>
+    <section id="notes-detail" style="display: none" class="modal">
+      <header>
+        <div class="title">
+          <span><button class="backBtn">&#8592;</button></span> Pocket Notes
+        </div>
+        <nav>
+          <button id="delete-btn">DELETE</button>
+          <button id="edit-btn">EDIT</button>
+        </nav>
+      </header>
+      <!-- <div class="notes-heading">
+        <h3>Summer Time - A Long Story</h3>
+        <p>Mar 11,2022</p>
+      </div> -->
+      <!-- <div class="notes-content"> -->
+      <!-- <img src="" alt="" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab,
+          voluptatem maxime quae deserunt neque expedita aspernatur perferendis
+          maiores asperiores modi, vitae eaque reprehenderit molestiae iusto id
+          cum mollitia nulla quidem. Lorem ipsum dolor sit amet consectetur,
+          adipisicing elit. Quibusdam ullam fugiat repellat, iste architecto,
+          nihil, repellendus at tenetur veritatis dolorem pariatur? Nobis,
+          quaerat? Non nihil maxime voluptates tenetur dolore! Labore iste autem
+          soluta molestiae sit minima nam ipsam ratione aliquid reiciendis
+          totam, esse, deserunt illum assumenda! Error suscipit unde possimus
+          ratione iure fugiat soluta culpa debitis quasi est iusto, consectetur
+          dolor aperiam animi consequatur pariatur ipsa sed doloribus
+          dignissimos veritatis autem eligendi numquam! Earum facere magni ab
+          officia, consequatur sed totam, eaque consectetur ullam nemo officiis
+          tempore hic est minima. Sunt eos repellendus natus optio! Magni, ad
+          corrupti doloremque ex ratione sint nesciunt temporibus ipsa tempore
+          exercitationem voluptate veritatis! Exercitationem alias in vitae
+          voluptates, excepturi eveniet voluptate aperiam. Dolorum quae nulla,
+          voluptates nisi pariatur illum dolor incidunt sint fugit blanditiis
+          soluta nam quisquam quasi similique. Repudiandae autem quos tempore
+          eaque et sunt assumenda voluptatum enim maxime nesciunt consectetur
+          sed sapiente velit quam totam animi impedit pariatur, rerum nostrum
+          ipsum, molestias aut tenetur! Reiciendis eveniet suscipit rem expedita
+          asperiores. Accusantium rem cum enim! Blanditiis pariatur saepe rem ad
+          magnam eum odit inventore totam nulla numquam, sed maxime, animi
+          corporis iusto voluptas provident, labore accusantium ducimus
+          excepturi nobis. Debitis, eligendi? Perspiciatis, qui!
+        </p> -->
+      <!-- </div> -->
+    </section>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
+
+
+
+
+
